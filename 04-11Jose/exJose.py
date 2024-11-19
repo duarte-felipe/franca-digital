@@ -1,7 +1,7 @@
 #escreva um algoritimo q a partir de um mes fornecido (1 a 12) mostre o nome do mes.
 
 print("vamos começar a aula!")
-
+print("exercicio 1")
 
 def nome_do_mes(mes): #funcao para todos meses
     meses = {
@@ -19,9 +19,9 @@ def nome_do_mes(mes): #funcao para todos meses
         12: "Dezembro"
     }
     
-    return meses.get(mes, "Mês inválido")
+    return meses.get(mes, "Mês inválido") #caso erro
 
-# Solicita ao usuário um mês
+# solicita ao usuário um mês
 mes_input = int(input("Digite um número de 1 a 12 que te falarei que mes esse numero representa: "))
 print(nome_do_mes(mes_input))
 
@@ -51,9 +51,9 @@ def main(): #funcao true para todas opcoes
             print("Você escolheu a Opção 4.")
         elif escolha == '5':
             print("Saindo do programa.")
-            break #eu poderia ter usado um 
+            break #eu poderia ter usado um 'exit' tbm, nao?
         else:
-            print("Opção inválida. Tente novamente.")
+            print("Opção inválida. Tente novamente.") #caso erro
 
 if __name__ == "__main__":
     main()
@@ -95,8 +95,44 @@ def calculadora():
 calculadora() #chamada de funçao
 
 
-#exercicios for in, while
+# O EXERCICIO 4 ESTA SEPARADO NA OUTRA ABA !!!!!!!!!
 
+
+print("exercicio 5")
+def eh_divisivel_por_6(numero): #chamada de funçao 
+
+    if numero % 2 == 0 and numero % 3 == 0:
+        return True
+    else:
+        return False  #simples
+
+# exemplo de uso
+numero = int(input("Digite um número: "))
+if eh_divisivel_por_6(numero):
+    print(f"O número {numero} é divisível por 6.")
+else:
+    print(f"O número {numero} não é divisível por 6.")
+
+
+
+print("exercicio 6")
+def trocar_valores(a, b): #chamando funçao padrao aq
+    # Trocando os valores das variáveis
+    a, b = b, a
+    return a, b
+
+# Exemplo de uso
+x = 3
+y = 7
+
+print(f"Antes da troca: x = {x}, y = {y}")
+x, y = trocar_valores(x, y) 
+print(f"Depois da troca: x = {x}, y = {y}") #prints para exemplo de uso
+
+
+
+#exercicios for in, while
+print("exercicio 8")
 num = 5 #numeros do contador 
 #quantas vezes sera repetido
 cont = 1
@@ -106,8 +142,12 @@ while cont <= 10: #enquanto o contador for = ou menor que 10 ele vai continuar c
     print(f"{num} x {cont} = {resultado}")
     cont += 1 #sempre vai adc +1
 
-    num = int(input("Digite um número para ver sua tabuada: ")) #input padrao
 
-for cont in range(1, 11):
+
+
+print("exercicio 9")
+num = int(input("Digite um número para ver sua tabuada: ")) #input padrao
+
+for cont in range(1, 11):  #for com o contador 
     resultado = num * cont
-    print(f"{num} x {cont} = {resultado}")
+    print(f"o resulado é: {num} x {cont} = {resultado}")
