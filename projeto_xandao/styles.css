@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #0e0e709d;
     margin: 0;
     padding: 0;
     display: flex;
@@ -41,9 +41,10 @@ input {
     font-size: 16px;
 }
 
+
 button {
     padding: 10px;
-    background-color: #2733dacb;
+    background-color: #1d28bea1;
     color: rgb(255, 252, 252);
     border: none;
     border-radius: 5px;
@@ -59,7 +60,7 @@ button:hover {
 .output {
     margin-top: 20px;
     padding: 15px;
-    background: #f9f9f9;
+    background: #f9f9f99a;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
