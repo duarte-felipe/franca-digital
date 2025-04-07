@@ -41,12 +41,12 @@ print(f"A média dos seus dois numero é: {media}")
 
 #liçao 2
 num = int(input("Digite um número: "))
-
 suc = num + 1
 ant = num - 1
 
 print(f"O sucessor de {num} é {suc}.")
 print(f"O antecessor de {num} é {ant}.")
+
 
 
 #liçao 3 
@@ -60,15 +60,11 @@ largura= float(input("Digite a largura: "))
 print("A altura do calculo foi {altura}, a largura do calculo foi {largura} e o resultaado de sua area e de: {}".format(altura*largura))
 
 
-
-
-
-
-
-
-
-
-
+#licao4
+num = float(input("Digite um número para calcular a raiz quadrada: "))
+sqrt = math.sqrt(num)
+#exibir o resultado
+print(f"A raiz quadrada de {num} é {sqrt}")
 
 
 #licao 5 
