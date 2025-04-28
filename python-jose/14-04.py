@@ -99,4 +99,5 @@ print(f"Menor valor: {menor_valor}")
 
 #licao18
 def somar(lista1, lista2):
-    min_len = min(len(lista1[i]/))
+    min_len = min(len(lista1[i]))
+
