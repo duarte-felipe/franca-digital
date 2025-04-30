@@ -33,7 +33,6 @@ def contagem_regressiva():
             seg -= 1
         if min == 8 and seg == 57:  #loop infinito
             break
-
 contagem_regressiva()
 
 #licao11
@@ -85,6 +84,15 @@ def media(elementos):
 #licao16
 '''lista = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 print (lista ('1,3,5,7,9,11,13,15'))'''
+
+
+#16
+def pares(lista):
+    return [num for num in lista if num % 2 == 0]
+val = input("digite os valores inteiros separados por espaços: ")
+lista = [int(x) for x in val.split()]
+result = pares(lista)
+print("Números pares da lista:", result)
 
 #licao17
 def maior_menor():

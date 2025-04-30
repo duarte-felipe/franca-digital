@@ -9,10 +9,24 @@ resultado = nome(nomes, busca)
 print("O nome existe na lista?", resultado)
 
 
+#licao20
+def quadrados(lista):
+    return [x**2 for x in lista]
 
 
+#licao21
+def multiplos(lista):
+    return sum(1 for x in lista if x % 3 == 0 and x % 5 == 0)
 
 
+#licao22
+def indices(lista, alvo):
+    return [i for i, x in enumerate(lista) if x == alvo]
+
+
+#licao23
+def letras(texto):
+    return [letra for letra in texto if not letra.isspace()]
 
 
 #licao 24
@@ -39,7 +53,7 @@ print(inverter_string("MARCO"))
 def lista(palavras):
     return [palavra for palavra in palavras if palavra.lower().startswith('lista')]
 
-print(lista(["amaral", "bortoleto", "galvão", "amstel", "mclaren"]))
+print(lista(["maristela", "abobora", "america", "corona", "ferrari"]))
 
 #licao 28
 def media(num):

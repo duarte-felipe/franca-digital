@@ -53,8 +53,6 @@ print(f"O antecessor de {num} é {ant}.")
 def calculo(largura, altura):
     area = (largura*altura)
     return area 
-
-
 altura = float(input("Digite a altura: "))
 largura= float(input("Digite a largura: "))
 print("A altura do calculo foi {altura}, a largura do calculo foi {largura} e o resultaado de sua area e de: {}".format(altura*largura))
@@ -73,8 +71,7 @@ print(f"A raiz quadrada de {num} é {sqrt}")
 nome= input("Digite o nome do aluno: ")
 nota1 = float(input("DIgite a primeira nota: "))
 nota2 = float(input("Digite a segunda nota: "))
-
-#variavel para media 
+ 
 media= (nota1+nota2) /2
 
 #print e conclusao do ex parcialmente 

@@ -23,8 +23,8 @@ def verificar_positivo(numero):
         print("O número é positivo.")
     else:
         print("O número não é positivo.")
-numero = int(input("Digite um número: "))
-verificar_positivo(numero)
+num = int(input("Digite um número: "))
+verificar_positivo(num)
 
 #licao7
 def verificar_par_impar(numero):
@@ -32,11 +32,11 @@ def verificar_par_impar(numero):
         print("O número é par.")
     else:
         print("O número é ímpar.")
-numero = int(input("Digite um número: "))
-verificar_par_impar(numero)
+num = int(input("Digite um número: "))
+verificar_par_impar(num)
 
 #licao8
-def ordem_decrescente(valor1, valor2):
+def decrescente(valor1, valor2):
     if valor1 > valor2:
         print(f"{valor1} > {valor2}")
     elif valor2 > valor1:
@@ -45,7 +45,7 @@ def ordem_decrescente(valor1, valor2):
         print("Os valores são iguais!")
 valor1 = int(input("Digite o primeiro valor: "))
 valor2 = int(input("Digite o segundo valor: "))
-ordem_decrescente(valor1, valor2)
+decrescente(valor1, valor2)
 
 
 
